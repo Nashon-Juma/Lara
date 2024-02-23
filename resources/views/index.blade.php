@@ -8,7 +8,7 @@
                                                                alt="Head of Lary the mascot"></h2>
 
             <p class="text-sm mt-14">
-                Another year. Another update. We're refreshing the popular Laravel series with new content.
+                Another year. Other update. We're refreshing the popular Laravel series with new content.
                 I'm going to keep you guys up to speed with what's going on!
             </p>
 
