@@ -5,8 +5,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('post/{$i}', function ($i) {
-    return view('./post/'.$i);
+Route::get('post', function ($post) {
+    return view('post/one',[
+    $post="hello world"
+])->with('$post',$post);
 });
 
 
