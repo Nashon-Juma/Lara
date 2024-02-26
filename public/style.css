@@ -1,9 +1,14 @@
 body{
-    background: black;
+    background: rgb(20, 1, 1);
     color:white;
     max-width: 600px;
     margin:auto;
-    
+
+}
+
+
+p{
+    line-height: 1.6;
 }
 
 
