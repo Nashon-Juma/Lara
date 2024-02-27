@@ -10,4 +10,14 @@ p{
     line-height: 1.6;
 }
 
+.link:hover {
+    color: red;
+    text-decoration:underline ;
+  }
+
+a{
+    color:rgb(128, 68, 0);
+    text-decoration:none ;
+}
+
 
