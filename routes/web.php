@@ -8,7 +8,8 @@ Route::get('/', function () {
 });
 
 Route::get('/post', function () {
-    return view('index');
+    $posts=Post::all();
+    return view('post',['posts'=>$posts]);
 });
 
 

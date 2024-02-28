@@ -6,11 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <?php foreach($posts as $post): ?>
     <article>
         <p>
             <?= $post ?>
         </p>
     </article>
+    <?php endforeach;?>
 
 </body>
 </html>
