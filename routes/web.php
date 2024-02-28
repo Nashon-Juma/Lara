@@ -7,18 +7,19 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/post', function () {
-    $posts=Post::all();
+Route::get('/posts', function () {
+    $posts=Post::Onn();
+    // ddd($posts);
     return view('post',['posts'=>$posts]);
 });
 
 
-Route::get('post/{holder}', function ($no) {
+ Route::get('post/{holder}',function ($no) {
     //find a post by it holder and return it's view
     return view('post',[
         'post'=>Post::find($no)
     ]);
-})->whereAlpha('holder');
+});
 
 
 
