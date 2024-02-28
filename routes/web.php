@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,15 +12,12 @@ Route::get('/post', function () {
 });
 
 
-Route::get('post/{num}', function ($no) {
-    $path=__DIR__."/../resources/posts/{$no}.html";
-    ddd($path);
-    if (!file_exists($path)){
-        return view('404');
-    }
-    $post=file_get_contents($path);
-    return view('post',['post'=>$post]);
-})->whereAlpha('num');
+Route::get('post/{holder}', function ($no) {
+    //find a post by it holder and return it's view
+    return view('post',[
+        'post'=>Post::find($no)
+    ]);
+})->whereAlpha('holder');
 
 
 
