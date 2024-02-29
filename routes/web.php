@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/posts', function () {
-    $posts=Post::Onn();
+    $posts=Post::Zote();
     // ddd($posts);
     return view('post',['posts'=>$posts]);
 });
@@ -19,7 +19,7 @@ Route::get('/posts', function () {
     return view('post',[
         'post'=>Post::find($no)
     ]);
-});
+})->where('holder','[A-Z_\-]+');
 
 
 

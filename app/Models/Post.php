@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 class Post extends Model
 {
     use HasFactory;
-    public static function Onn(){
+    public static function Zote(){
         $files= File::files(resource_path("posts/"));
         return array_map(fn($file)=>$file->getContents(),$files);
     }
