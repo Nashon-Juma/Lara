@@ -16,9 +16,9 @@ Route::get('/posts', function () {
 
  Route::get('post/{holder}',function ($no) {
     //find a post by it holder and return it's view
-    return view('post',[
-        'post'=>Post::find($no)
-    ]);
+    return view('post',
+        // 'post'=>Post::find($no)
+    );
 })->where('holder','[A-Z_\-]+');
 
 
