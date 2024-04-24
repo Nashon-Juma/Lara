@@ -7,5 +7,6 @@
         <p>We are located opposite the Greenhouse along ngong road</p>
         </div>
     </main>
+
     </div>
 <?php require ('cell/down.php'); ?>
