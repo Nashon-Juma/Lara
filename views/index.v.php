@@ -9,6 +9,4 @@
 </div>
     </main>
     </div>
-
-
 <?php require ('cell/down.php'); ?>
