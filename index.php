@@ -10,4 +10,5 @@ $statement = $pdo->prepare("select * from posts");
 
 $statement->execute();
 $posts = $statement->fetchAll();
+
 //dd($posts);
